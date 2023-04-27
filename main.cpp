@@ -42,7 +42,7 @@ std::cout<<even(c, 5)<<std::endl;
 std::cout<<odd(c, 5)<< std::endl;
 std::cout << count_odd_even(c, sizeof (c)/ sizeof(c[0])) << std::endl;
 std::cout << find(c, 5, 7) << std::endl;
-//Func::my_mapper(c, std::end(c), [](auto c) {return c*c;});
+Func::my_mapper(c, std::end(c), [](auto c) {return c*c;});
 auto v = Func::my_reduce(c, c + 5, [](auto acc, auto a) {return acc + a;});
 std::cout << v << std::endl;
 
